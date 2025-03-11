@@ -1,4 +1,3 @@
-package src;
 
 // src/Eleve.java
 public class Eleve {
