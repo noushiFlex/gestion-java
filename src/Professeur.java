@@ -18,7 +18,6 @@ public class Professeur extends Personne {
 
     public LocalDate getDateDeNaissance(){
         return this.getDateDeNaissance();
-
     }
 
     @Override

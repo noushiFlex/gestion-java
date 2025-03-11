@@ -1,22 +1,28 @@
+import java.time.LocalDate;
 
-// src/Eleve.java
-public class Eleve {
-    private String nom;
+public class Eleve extends Personne {
+    private String classe;
 
-    public Eleve(String nom) {
-        this.nom = nom;
+    public Eleve(String nom, String prenom, String ville, LocalDate dateDeNaissance, String classe) {
+        super(nom, prenom, ville, dateDeNaissance);
+        this.classe = classe;
     }
 
-    public String getNom() {
-        return nom;
+    public String getClasse() {
+        return classe;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setClasse(String classe) {
+        this.classe = classe;
     }
 
     @Override
-    public String toString() {
-        return "Élève: " + nom;
+    public void afficherInfos() {
+        super.afficherInfos();
+        System.out.println("Classe : " + classe);
+    }
+
+    public LocalDate getDateDeNaissance(){
+        return this.getDateDeNaissance();
     }
 }

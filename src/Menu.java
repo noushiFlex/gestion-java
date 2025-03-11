@@ -26,7 +26,7 @@ public class Menu {
     private void traiterChoix(int choix) {
         switch (choix) {
             case 1:
-                // gererEleves(); // Appel de la méthode pour la gestion des élèves
+                GestionDesEleves.main();
                 break;
             case 2:
                 GestionDesProfesseurs.main();
