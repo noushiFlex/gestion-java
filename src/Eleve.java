@@ -1,5 +1,3 @@
-
-// src/Eleve.java
 public class Eleve {
     private String nom;
 

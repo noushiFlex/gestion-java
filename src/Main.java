@@ -19,7 +19,9 @@ public class Main {
         Utilisateur user = new Utilisateur(nom, motDePasse);
 
         if (user.authentification()) {
-            System.out.println("Le mot de passe est correct ✅");
+            System.out.println("Le mot de passe est correct ✅\n");
+            Menu menu = new Menu();
+            menu.afficherMenu();
         } else {
             System.out.println("Le mot de passe est incorrect ❌");
         }

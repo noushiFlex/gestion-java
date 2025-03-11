@@ -1,28 +1,23 @@
-import java.util.Date;
-import java.time.LocalDate;
-import java.time.Period;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Personne {
+// Classe de base Personne
+class Personne {
+    protected String nom;
+    protected String prenom;
+    protected int age;
 
-    private Integer id;
-    private String nom;
-    private String prenom;
-    private String ville;
-    private Date dateDeNaissance;
-
-    public Personne(String nom, String prenom, String ville, Date dateDeNaissance) {
+    public Personne(String nom, String prenom, int age) {
         this.nom = nom;
         this.prenom = prenom;
-        this.ville = ville;
-        this.dateDeNaissance = dateDeNaissance;
-    }
-    public void supprimer() {
-        System.out.println("La personne " + this.nom + " a été supprimée.");
+        this.age = age;
     }
 
-    public int obtenirAge() {
-        Integer CurrentAge = 2025 - this.dateDeNaissance.getYear() ;
-        return CurrentAge;
+    public String getNom() {
+        return nom;
     }
 
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
 }
