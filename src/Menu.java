@@ -29,7 +29,7 @@ public class Menu {
                 // gererEleves(); // Appel de la méthode pour la gestion des élèves
                 break;
             case 2:
-                // gererProfesseurs(); // Appel de la méthode pour la gestion des professeurs
+                GestionDesProfesseurs.main();
                 break;
             case 3:
                 // gererUtilisateurs(); // Appel de la méthode pour la gestion des utilisateurs

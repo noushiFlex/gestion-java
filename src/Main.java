@@ -6,9 +6,9 @@ public class Main {
 
         System.out.println("--------------------------------");
         System.out.println("\tBienvenu dans l'application");
-        System.out.println("--------------------------------\n\n");
+        System.out.println("--------------------------------\n");
 
-        System.out.println("\tConnexion\n\n\n");
+        System.out.println("\tConnexion\n");
 
         System.out.print("Nom d'utilisateur : ");
         String nom = scanner.nextLine();
@@ -20,10 +20,11 @@ public class Main {
 
         if (user.authentification()) {
             System.out.println("Le mot de passe est correct ✅");
+            Menu menu = new Menu();
+            menu.afficherMenu();
         } else {
             System.out.println("Le mot de passe est incorrect ❌");
         }
-
         scanner.close();
     }
 }
