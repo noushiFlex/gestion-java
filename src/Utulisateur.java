@@ -1,5 +1,6 @@
 
 class Utilisateur {
+    private Integer id;
     private String nom;
     private String motDePasse;
 
